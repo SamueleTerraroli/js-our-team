@@ -91,3 +91,24 @@ const teamMembers = [
     containerTeamCards.innerHTML = card;
   }
   addTeam(teamMembers);
+
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const role = document.getElementById('role').value;
+    const email = document.getElementById('email').value;
+    const img = document.getElementById('img').value;
+
+    const newMember ={
+      name,
+      role,
+      email,
+      img
+    }
+
+    teamMembers.push(newMember);
+    addTeam(teamMembers);
+    
+  })
