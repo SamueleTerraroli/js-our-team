@@ -60,12 +60,33 @@ const teamMembers = [
   //7. Invoco nuovamente la funzione per ciclare l'array
   //8. Faccio il reset del form
 
+  const createMemberCard = (member) =>{
+    const{name, role, email, img}= member;
+    return `                <div class="col">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-12 col-lg-4">
+                            <img src="assets/img/${img}" class="img-fluid rounded-start img" alt="${name}">
+                          </div>
+                          <div class="col-12 col-lg-8 d-flex px-2 px-lg-3">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                              <h5 class="name">${name}</h5>
+                              <h6 class="role">${role}</h6>
+                              <p class="card-text"><small class="text-body-secondary email">${email}</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>`
+
+  }
+  
   const addTeam = (dataArray) =>{
-    const containerTeamCards = document.getElementById(card-container);
-    let card="";
+    const containerTeamCards = document.getElementById('card-container');
+    let card='';
     for(let member of dataArray){
 
-      card += createMemberCard;
+      card += createMemberCard(member);
     }
     containerTeamCards.innerHTML = card;
   }
