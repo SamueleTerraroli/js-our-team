@@ -72,7 +72,7 @@ const teamMembers = [
                             <div class="card-body d-flex flex-column justify-content-center">
                               <h5 class="name">${name}</h5>
                               <h6 class="role">${role}</h6>
-                              <p class="card-text"><small class="text-body-secondary email">${email}</small></p>
+                              <p class="card-text"><small class="tex email">${email}</small></p>
                             </div>
                           </div>
                         </div>

@@ -1,9 +1,56 @@
+body{
+    background-color: rgb(33,37,41);
+    color: white;
+}
+.leckerli-one-regular {
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 img{
     width: 100%;
     height: auto;
     border-radius: 5px;
     
 }
+header{
+    background-color: hsl(210, 8%, 19%);
+    margin-bottom: 100px;
+}
+.card{
+    background-color: rgb(33,37,41);
+    color: white;
+}
+.card-text{
+    
+    color: white;
+}
 .card-body{
     padding: 5px;
+}
+
+#main-container{
+    border-radius: 5px;
+    background-color: hsl(210, 8%, 19%);
+}
+.form-control{
+    border:1px solid rgb(33,37,41) ;
+    background-color:hsl(210, 8%, 19%) ;
+    color: white;
+}
+.form-text{
+    color:white;
+}
+h2{
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+h3{
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
 }
