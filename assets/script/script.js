@@ -59,3 +59,14 @@ const teamMembers = [
   //6. pusho il nuovo oggetto nell'array
   //7. Invoco nuovamente la funzione per ciclare l'array
   //8. Faccio il reset del form
+
+  const addTeam = (dataArray) =>{
+    const containerTeamCards = document.getElementById(card-container);
+    let card="";
+    for(let member of dataArray){
+
+      card += createMemberCard;
+    }
+    containerTeamCards.innerHTML = card;
+  }
+  addTeam(teamMembers);
