@@ -93,6 +93,13 @@ const teamMembers = [
   addTeam(teamMembers);
 
   const form = document.querySelector('form');
+  const resetInput =()=>{
+    document.getElementById('name').value = '';
+    document.getElementById('role').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('img').value = '';
+    
+  }
 
   form.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -110,5 +117,6 @@ const teamMembers = [
 
     teamMembers.push(newMember);
     addTeam(teamMembers);
+    resetInput();
     
   })
